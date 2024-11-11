@@ -1,0 +1,77 @@
+@media (max-width: 767px) {
+  .pinpad{
+    width: 300px;
+    height: 457px;
+    
+    &__back{
+      width: 300px;
+      height: 457px;
+    }
+
+    &__front{
+      width: 268px;
+      height: 441px;
+    }
+
+    &__keyboard{
+      width: 238px;
+      height: 290px;
+    }
+  }
+  .button{
+    width: 71px;
+    height: 61px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .lcd-screen{
+    width: 238px;
+    height: 93px;
+
+    &__numbers {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    &__icon {
+      width: 27px;
+      height: 27px;
+    }
+  }
+
+  .modal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    &__window{
+      width: 300px;
+      height: 380px;
+    }
+
+    &__title{
+      font-size: 36px;
+      line-height: 45px;
+    }
+
+    &__text{
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  
+  .alert{
+    position: absolute;
+    height: 79px;
+    top: 0;
+    display: none;
+    &__text{
+      text-align: center;
+      width: 300px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  }

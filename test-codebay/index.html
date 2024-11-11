@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinpad App - Secure Your Access</title>
+    <meta
+      name="description"
+      content="Secure your access with Pinpad - a user-friendly PIN setup and access system. Configure a 6-digit PIN and ensure your safety."
+    />
+    <meta
+      name="keywords"
+      content="Pinpad, PIN setup, secure access, user-friendly, 6-digit PIN, security, access control"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Ignacio" />
+
+    <!-- Open Graph for social media sharing -->
+    <meta property="og:title" content="Pinpad App - Secure Your Access" />
+    <meta
+      property="og:description"
+      content="Set up and access your PIN securely with our user-friendly Pinpad."
+    />
+    <meta property="og:image" content="./assets/icons/eye-open.svg" />
+    <meta
+      property="og:url"
+      content="https://www.codebay-innovation.com/pinpad"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card for Twitter sharing -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pinpad App - Secure Your Access" />
+    <meta
+      name="twitter:description"
+      content="Secure your access with Pinpad - a user-friendly PIN setup and access system."
+    />
+    <meta name="twitter:image" content="./assets/icons/eye-open.svg" />
+    <meta name="twitter:site" content="@nachetetnf" />
+
+    <!-- Canonical URL-->
+    <link rel="canonical" href="https://www.codebay-innovation.com/pinpad" />
+
+    <link rel="icon" href="./assets/icons/eye-open.svg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="src/css/main.css" />
+  </head>
+  <body>
+    <div class="pinpad">
+      <div class="pinpad__back">
+        <div class="pinpad__front">
+          <div class="lcd-screen">
+            <div class="lcd-screen__numbers"></div>
+            <div class="lcd-screen__toggle-visibility">
+              <img
+                src="./assets/icons/eye-open.svg"
+                alt="Toggle visibility"
+                class="lcd-screen__icon"
+              />
+            </div>
+          </div>
+          <div class="pinpad__keyboard">
+            <button class="button" value="7">7</button>
+            <button class="button" value="8">8</button>
+            <button class="button" value="9">9</button>
+            <button class="button" value="4">4</button>
+            <button class="button" value="5">5</button>
+            <button class="button" value="6">6</button>
+            <button class="button" value="1">1</button>
+            <button class="button" value="2">2</button>
+            <button class="button" value="3">3</button>
+            <button class="button clear" value="C">C</button>
+            <button class="button">0</button>
+            <button class="button save" value="OK">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal__window" id="setupModal">
+      <div class="modal__closed">
+        <img src="./assets/icons/closed.svg" alt="icono de una x" />
+      </div>
+      <h1 class="modal__title">Bienvenido a Pinpad</h1>
+      <p class="modal__text">
+        Introduce un número de 6 dígitos y pulsa el botón de save. La próxima
+        vez que entres se te pedirá el PIN para poder acceder.
+      </p>
+    </div>
+
+    <div class="modal modal__window" id="accessModal" style="display: none">
+      <div class="modal__closed">
+        <img src="./assets/icons/closed.svg" alt="icono de una x" />
+      </div>
+      <h1 class="modal__title">Accede a Pinpad</h1>
+      <p class="modal__text">
+        Introduce el PIN que acabas de configurar para acceder.
+      </p>
+    </div>
+
+    <div class="alert" id="alertBox">
+      <div class="alert__text"></div>
+    </div>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>

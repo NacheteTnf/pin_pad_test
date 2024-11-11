@@ -1,0 +1,16 @@
+
+
+// Importar estilos base
+@import 'abstracts/variables';
+@import 'base/globals';
+
+// Importar componentes
+@import 'components/buttons';
+@import 'components/pinpad';
+@import 'components/lcd';
+@import 'components/alert';
+@import 'components/modal';
+
+// Importar estilos para layouts
+@import 'layouts/mobile';
+@import 'layouts/desktop';

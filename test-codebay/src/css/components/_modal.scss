@@ -1,0 +1,43 @@
+.modal{
+    width: 1920px;
+    height: 1080px;
+    background: #00000040;
+    
+    &__window{
+        position: relative;
+        width: 834px;
+        height: 275px;
+        border-radius: 10px;
+        border: 2px solid #949494;
+        background: #F0F0F0;
+        box-shadow: 0px 8px 16px 8px #00000026;
+        box-shadow: 0px 3px 4px 0px #00000080;
+        
+    }
+
+    &__closed {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: none;
+        border: none;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+        
+    }
+    &__title{
+        font-size: 54px;
+        font-weight: 500;
+        line-height: 67.61px;
+        text-align: center;
+        color: $modal-color__text;
+    }
+    &__text{   
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22.54px;
+        text-align: center;
+        color: $modal-color__text;
+    }
+}

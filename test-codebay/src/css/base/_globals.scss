@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'AdobeClean';
+    src: url('../../../assets/fonts/AdobeClean-Bold.otf') format('opentype');
+    font-weight: bold;  
+    font-style: normal; 
+  }
+  
+  @font-face {
+    font-family: 'AdobeClean';
+    src: url('../../../assets/fonts/AdobeClean-Medium.otf') format('opentype');
+    font-weight: 500;  
+    font-style: normal; 
+  }
+  
+  @font-face {
+    font-family: 'AdobeClean';
+    src: url('../../../assets/fonts/AdobeClean-Regular.otf') format('opentype');
+    font-weight: normal; 
+    font-style: normal;  
+  }
+  
+  @font-face {
+    font-family: 'DsDigital';
+    src: url('../../../assets/fonts/ds-digital.otf') format('opentype');
+  }
+  
+  body {
+    font-family: "AdobeClean", sans-serif;
+    background-image: url('../../../assets/images/background-wall.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+

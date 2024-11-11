@@ -1,0 +1,289 @@
+@font-face {
+  font-family: "AdobeClean";
+  src: url("../../../assets/fonts/AdobeClean-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AdobeClean";
+  src: url("../../../assets/fonts/AdobeClean-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AdobeClean";
+  src: url("../../../assets/fonts/AdobeClean-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DsDigital";
+  src: url("../../../assets/fonts/ds-digital.otf") format("opentype");
+}
+body {
+  font-family: "AdobeClean", sans-serif;
+  background-image: url("../../../assets/images/background-wall.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 78px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 40px;
+  border-radius: 6px;
+  border: 2px solid rgba(0, 0, 0, 0.6980392157);
+  opacity: 1;
+  background: linear-gradient(180deg, #414D66 0%, #161C27 100%);
+  box-shadow: 0px 0px 5px 2px rgba(105, 136, 198, 0.3019607843) inset, 0px 0px 0px 3px rgba(211, 226, 255, 0.1882352941) inset, 0px 0px 1px 1px rgba(143, 165, 208, 0.5019607843);
+}
+.button:hover {
+  background: linear-gradient(180deg, #7488B1 0%, #3F506E 100%);
+  border: 1px solid rgba(0, 0, 0, 0.6980392157);
+  box-shadow: 0px 1px 5px 2px rgba(48, 53, 65, 0.5607843137) inset, 0px 0px 1px 1px rgba(143, 165, 208, 0.5019607843);
+}
+.button:last-child {
+  background: linear-gradient(180deg, #6AECB0 0%, #42A484 100%);
+}
+.button:nth-last-child(3) {
+  background: linear-gradient(180deg, #EF6476 0%, #CF5060 100%);
+}
+
+.pinpad {
+  width: 380px;
+  height: 580px;
+}
+.pinpad__back {
+  width: 380px;
+  height: 580px;
+  border-radius: 18px;
+  background: linear-gradient(270deg, #222B3D 0%, #6A758B 100%);
+  box-shadow: 0px -14px 0px 0px #161C27 inset, 0px 2px 3px 0px rgba(0, 0, 0, 0.6980392157), 0px 4px 8px 1px rgba(0, 0, 0, 0.2509803922);
+}
+.pinpad__front {
+  width: 340px;
+  margin-left: 18px;
+  height: 565px;
+  border: 1px solid #68748A;
+  background: #364157;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pinpad__keyboard {
+  width: 302px;
+  height: 369px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.lcd-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 302px;
+  height: 118px;
+  background: #E5F3F2;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.6) inset;
+}
+.lcd-screen__numbers {
+  font-family: "DsDigital", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  padding: 20px;
+  color: #5D6A69;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lcd-screen__toggle-visibility {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  display: none;
+  border: none;
+  cursor: pointer;
+}
+.lcd-screen__icon {
+  width: 35px;
+  height: 35px;
+}
+.lcd-screen .lcd-screen--error {
+  background-color: #FFE4E4 !important;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1920px;
+  height: 50px;
+  border: 0px 0px 2px 0px;
+  background: #FFD600;
+  border-bottom: 2px solid #C2AF03;
+}
+.alert__text {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  color: #635905;
+}
+
+.modal {
+  width: 1920px;
+  height: 1080px;
+  background: rgba(0, 0, 0, 0.2509803922);
+}
+.modal__window {
+  position: relative;
+  width: 834px;
+  height: 275px;
+  border-radius: 10px;
+  border: 2px solid #949494;
+  background: #F0F0F0;
+  box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.1490196078);
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.5019607843);
+}
+.modal__closed {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.modal__title {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 67.61px;
+  text-align: center;
+  color: #747474;
+}
+.modal__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.54px;
+  text-align: center;
+  color: #747474;
+}
+
+@media (max-width: 767px) {
+  .pinpad {
+    width: 300px;
+    height: 457px;
+  }
+  .pinpad__back {
+    width: 300px;
+    height: 457px;
+  }
+  .pinpad__front {
+    width: 268px;
+    height: 441px;
+  }
+  .pinpad__keyboard {
+    width: 238px;
+    height: 290px;
+  }
+  .button {
+    width: 71px;
+    height: 61px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .lcd-screen {
+    width: 238px;
+    height: 93px;
+  }
+  .lcd-screen__numbers {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .lcd-screen__icon {
+    width: 27px;
+    height: 27px;
+  }
+  .modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal__window {
+    width: 300px;
+    height: 380px;
+  }
+  .modal__title {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .modal__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .alert {
+    position: absolute;
+    height: 79px;
+    top: 0;
+    display: none;
+  }
+  .alert__text {
+    text-align: center;
+    width: 300px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .pinpad {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal__title {
+    width: 674px;
+    font-size: 54px;
+  }
+  .modal__text {
+    width: 381px;
+    line-height: 30px;
+  }
+  .alert {
+    position: absolute;
+    top: 0;
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

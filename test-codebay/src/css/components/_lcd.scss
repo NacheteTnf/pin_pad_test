@@ -1,0 +1,45 @@
+.lcd-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 302px;
+    height: 118px;
+    background: #E5F3F2;
+    border: 2px solid #000000; 
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 3px #00000099 inset;
+    
+    
+    &__numbers {
+      font-family: 'DsDigital', sans-serif;
+      font-size: 64px; 
+      font-weight: 700;
+      line-height: 64px; 
+      padding: 20px;
+      color: $number-color;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    &__toggle-visibility {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      display: none;
+      border: none;
+      cursor: pointer;
+    }
+    &__icon {
+      width: 35px; 
+      height: 35px; 
+    }
+
+    .lcd-screen--error {
+      background-color: #FFE4E4 !important;
+    }
+  }
+  

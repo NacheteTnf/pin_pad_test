@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+.pinpad{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    &__title{
+      width: 674px;
+      font-size: 54px;
+    }
+
+    &__text{
+      width: 381px;
+      line-height: 30px;
+    }
+  }
+  .alert{
+    position: absolute;
+    top: 0;
+    display: none;
+
+  }
+
+}

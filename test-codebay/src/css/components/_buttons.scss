@@ -1,0 +1,37 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 78px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 40px;
+  border-radius: 6px;
+  border: 2px solid #000000B2;
+  opacity: 1;
+  background: $primary-color;
+  box-shadow: 
+      0px 0px 5px 2px #6988C64D inset, 
+      0px 0px 0px 3px #D3E2FF30 inset, 
+      0px 0px 1px 1px #8FA5D080; 
+
+  &:hover{
+    background: $primary-color__active;
+    border: 1px solid #000000B2;
+    box-shadow: 
+        0px 1px 5px 2px #3035418F inset, 
+        0px 0px 1px 1px #8FA5D080; 
+  }
+
+  &:last-child{
+    background: linear-gradient(180deg, #6AECB0 0%, #42A484 100%);
+
+  }
+
+  &:nth-last-child(3){
+    background: linear-gradient(180deg, #EF6476 0%, #CF5060 100%);
+
+  }
+
+  }
